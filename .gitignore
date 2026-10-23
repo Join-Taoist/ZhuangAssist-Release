@@ -1,0 +1,10 @@
+*.zip
+*.dll
+*.pdb
+*.log
+.env
+.env.*
+config-import/
+ScriptCache/
+src/
+work/
