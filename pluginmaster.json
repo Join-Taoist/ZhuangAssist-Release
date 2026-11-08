@@ -1,9 +1,9 @@
 [
   {
-    "Author": "Local reconstruction; original plugin by Karlin",
+    "Author": "Join-Taoist",
     "Name": "ZhuangAssist",
     "InternalName": "ZhuangAssist",
-    "AssemblyVersion": "0.6.0.0",
+    "AssemblyVersion": "0.8.0.0",
     "Description": "本地 C# 脚本、游戏事件、绘图与提示。输入 /za 打开设置；脚本通过 JSON 地址独立下载。各功能验证状态及限制见版本说明。",
     "Punchline": "/za → 打开 ZhuangAssist",
     "RepoUrl": "https://github.com/Join-Taoist/ZhuangAssist-Release",
@@ -12,9 +12,9 @@
     "LoadRequiredState": 0,
     "LoadSync": false,
     "CanUnloadAsync": false,
-    "DownloadLinkInstall": "https://github.com/Join-Taoist/ZhuangAssist-Release/releases/download/v0.6.0/ZhuangAssist-0.6.0.zip",
-    "DownloadLinkUpdate": "https://github.com/Join-Taoist/ZhuangAssist-Release/releases/download/v0.6.0/ZhuangAssist-0.6.0.zip",
-    "LastUpdate": 1792782512,
+    "DownloadLinkInstall": "https://github.com/Join-Taoist/ZhuangAssist-Release/releases/download/v0.8.0/ZhuangAssist-0.8.0.zip",
+    "DownloadLinkUpdate": "https://github.com/Join-Taoist/ZhuangAssist-Release/releases/download/v0.8.0/ZhuangAssist-0.8.0.zip",
+    "LastUpdate": 1794173569,
     "Tags": [
       "utility",
       "scripts"
