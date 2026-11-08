@@ -1,27 +1,25 @@
 # ZhuangAssist（ZA）
 
-ZhuangAssist 的公开发布仓库。这里用于发布安装包、版本说明和 Dalamud 插件更新清单，维护源码保存在独立的私有仓库。
+作者：**Join-Taoist**。此公开仓库只提供混淆后的正式安装包、插件更新清单和说明；维护源码保存在独立私有仓库。
 
-## 当前状态
+当前正式版 **0.8.0**，命令 `/za`，Dalamud API Level **15**。完整功能、验证分类和限制见 [版本说明](releases/0.8.0.md)。
 
-首个公开包版本为 **0.6.0**，插件命令为 `/za`，目标 Dalamud API Level 为 **15**。功能、验证分类与限制见 [0.6.0 版本说明](releases/0.6.0.md)。
-
-安装包与校验文件位于 [Releases](https://github.com/Join-Taoist/ZhuangAssist-Release/releases)。源码不随运行包发布。
-
-本地脚本、事件、绘图和文字提示可以离线工作；脚本目录下载和可选 Edge TTS 需要网络。具体功能范围和游戏内测试状态会随每个版本说明公布。
-
-## 更新清单入口
+## 卫月仓库地址
 
 ```text
 https://raw.githubusercontent.com/Join-Taoist/ZhuangAssist-Release/main/pluginmaster.json
 ```
 
-在卫月设置的“自定义插件仓库”添加上述地址并启用，保存后刷新插件列表，搜索 **ZhuangAssist** 并安装。若已经启用同名开发插件，先停用开发插件，避免同名实例或命令冲突。
+添加至卫月“自定义插件仓库”，刷新后搜索 ZhuangAssist。已有同名开发插件时避免同时启用两个实例。更新会沿用已有 ZA 独立配置。
 
-安装后输入 `/za`，在“脚本地址”添加原版格式的 JSON 目录地址，再到“脚本目录”下载并加载所需脚本。新安装不捆绑任何第三方脚本或个人配置；独立配置目录为 `%APPDATA%/XIVLauncherCN/pluginConfigs/ZhuangAssist/`。已有 ZA 配置继续沿用。
+运行 `/za`，在“脚本地址”添加原版格式的 JSON 地址，再到“可用脚本”选择、下载和管理脚本。脚本以外部 C# 文件保存；新安装不附带第三方战斗脚本或个人配置。
 
-Edge TTS 在“设置 → 常规”中按需开启，首次合成需要网络；默认关闭。Windows 本地语音保留。安装包包含运行所需依赖及第三方说明，不包含本机配置、玩家资料、脚本缓存、调试符号或私有源码。
+可用脚本将当前地图的“未安装 → 可更新 → 已安装”排在前面。打开列表可后台检查目录更新，亦可手动检查；更新脚本仍需点击更新按钮。此自动检查可以关闭。
 
-## 来源与许可
+本地脚本编译、事件、绘图和本地提示不依赖账号验证或在线心跳。脚本目录下载和可选 Edge TTS 需要网络；在线语音默认关闭，首次合成会把待朗读文字交给微软语音服务。普通本地语音及游戏 echo 的 SE 提示音保留。
 
-本项目基于本地兼容重建，原插件为 Karlin 的 KodakkuAssist；第三方组件保持各自权利和许可。原插件、第三方语音核心或绘图模板没有被重新声明为开源。组件来源与适用许可见 [第三方说明](THIRD-PARTY-NOTICES.md) 及安装包内的 licenses 目录。
+正式 ZIP 与校验文件见 [Releases](https://github.com/Join-Taoist/ZhuangAssist-Release/releases)。自 0.8.0 起，公开安装包中的 ZA 主程序集和语音核心均经过混淆，保留脚本 API 和配置格式。包内不含源码、调试符号、混淆映射、SDK、原版插件 DLL 或私人资料。ZIP 校验见 SHA256SUMS.txt，包内逐文件校验见 SHA256.json。
+
+## 来源
+
+原版 KodakkuAssist 作者为 Karlin；现有脚本及第三方组件保持各自的作者、权利和许可。见 [第三方说明](THIRD-PARTY-NOTICES.md) 及包内 licenses。没有给原插件、第三方语音核心或绘图模板重新声明统一开源许可。
